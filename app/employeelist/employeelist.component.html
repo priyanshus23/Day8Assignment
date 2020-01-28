@@ -1,0 +1,41 @@
+<table border="3px" width="50%" *ngIf="emplys.length>0">
+  <thead>
+    <tr>
+      <td>
+        Id
+      </td>
+      <td>
+        Namr
+      </td>
+      <td>
+        Salary
+      </td>
+      <td>
+          Department
+      </td>
+      <td>
+        Action
+      </td>
+    </tr>
+  </thead>
+  <tr *ngFor="let emp of emplys">
+    <td>
+      {{ emp.id }}
+    </td>
+    <td>
+      {{emp.name}}
+    </td>
+    <td>
+      {{emp.salary}}
+    </td>
+    <td>
+      {{emp.department}}
+    </td>
+    <td>
+      <button>Update</button>
+      <button>
+        Delete
+      </button>
+    </td>
+  </tr>
+</table>
